@@ -9,7 +9,7 @@ const ThemeProvider: React.FC = (props) => {
     // troca o background conforme a hora do dia
     const bg =
       hours > 6 && hours < 18
-        ? "linear-gradient(89.82deg, #64ade0 0.17%, #105fd6 99.86%);"
+        ? "linear-gradient(89.82deg, #85c3f0 0.17%, #0850bd 99.86%);"
         : "linear-gradient(89.82deg, #446481 0.17%, #091F34 99.86%);";
 
     return {
