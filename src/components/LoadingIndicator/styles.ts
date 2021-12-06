@@ -24,4 +24,5 @@ export const Container = styled.div`
   width: 60%;
   background-color: #c3c3c350;
   height: 60px;
+  overflow: hidden;
 `;
