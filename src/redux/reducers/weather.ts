@@ -11,7 +11,7 @@ const INITAL_STATE: STATE = {
   loading: false,
 };
 
-export default (state = INITAL_STATE, action: Action): STATE => {
+const weatherReducers = (state = INITAL_STATE, action: Action): STATE => {
   switch (action.type) {
     case actions.SET_MY_WEATHER:
       return { ...state, data: action.payload };
@@ -23,3 +23,5 @@ export default (state = INITAL_STATE, action: Action): STATE => {
       return state;
   }
 };
+
+export default weatherReducers;

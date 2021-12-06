@@ -1,6 +1,8 @@
 import { fork } from "redux-saga/effects";
 import weatherSagas from "./weather";
 
-export default function* () {
+function* sagas() {
   yield fork(weatherSagas);
 }
+
+export default sagas;
