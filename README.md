@@ -12,6 +12,11 @@ O app aprensenta uma dashboard com os principais dados climáticos:
 - Visibilidade
 - Ventos
 
+
+*Live Preview:* https://my-weather-builders.herokuapp.com/
+
+---
+
 Telas:
 
 **1 - Home: dia e noite**
