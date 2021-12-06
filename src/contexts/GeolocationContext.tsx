@@ -21,7 +21,7 @@ const GeolocationContext: React.FC = (props) => {
           function (position) {
             setCoordinates({
               lat: position.coords.latitude,
-              lng: position.coords.longitude,
+              lon: position.coords.longitude,
             });
             setError(false);
           },
