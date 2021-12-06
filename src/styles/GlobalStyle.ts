@@ -9,13 +9,28 @@ const GlobalStyle = createGlobalStyle<{ theme: TThemeProvider }>`
     font-family: 'Manrope';
   }
 
+  body {
+    background: ${({ theme }) => theme.bg};
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
 
   h1 {
-    
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
     color: ${({ theme }) => theme.textWhite};
+
+    @media screen and (max-width: 1100px) {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 28px;
+
+    }
   }
 
   h2 {
@@ -32,6 +47,10 @@ const GlobalStyle = createGlobalStyle<{ theme: TThemeProvider }>`
     font-weight: 500;
     font-size: 24px;
     line-height: 33px;
+
+    @media screen and (max-width: 1100px) {
+      font-size: 18px;
+    }
   }
 
   span {
@@ -43,6 +62,10 @@ const GlobalStyle = createGlobalStyle<{ theme: TThemeProvider }>`
 
   .text-white {
     color: ${({ theme }) => theme.textWhite};
+  }
+
+  .text-light {
+    color: ${({ theme }) => theme.textLight};
   }
 
   button {
